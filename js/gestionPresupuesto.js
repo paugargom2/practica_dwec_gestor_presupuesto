@@ -107,7 +107,7 @@ function CrearGasto(descr, val, fech, ...etiq) {
         f =new Date (this.fecha);
 
         let gastoDesc = this.mostrarGasto() + ".\n";
-        let fechFormat = "Fecha: " + f.toLocaleString('es-ES') + "\n";
+        let fechFormat = "Fecha: " + f.toLocaleString() + "\n";
         let resultEtiq ="Etiquetas:\n";
         let i= 0;
 
@@ -144,6 +144,27 @@ function CrearGasto(descr, val, fech, ...etiq) {
             }
         }
     }
+
+    this.obtenerPeriodoAgrupacion = function(periodo){
+        let perAgrup;
+
+        switch(periodo) {
+            case dia:
+
+            break;
+            case mes:
+
+            break;
+            case anyo:
+
+            break;
+        }
+
+        return(perAgrup);
+    }
+
+
+
 
 
 
