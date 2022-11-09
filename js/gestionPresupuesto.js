@@ -26,10 +26,6 @@ function mostrarPresupuesto() {
 }
 
 function listarGastos() {
-    
-    /*for(let i=0; i<gastos.length;i++) {
-        console.log(gastos[i]);
-    }*/
     return (gastos);
 }
 
@@ -69,6 +65,15 @@ function calcularBalance() {
 
     return(balance);
 }
+
+function filtrarGastos() {
+
+}
+
+function agruparGastos() {
+
+}
+
 
 function CrearGasto(descr, val, fech, ...etiq) {
     // TODO
@@ -166,5 +171,7 @@ export   {
     anyadirGasto,
     borrarGasto,
     calcularTotalGastos,
-    calcularBalance
+    calcularBalance,
+    filtrarGastos,
+    agruparGastos
 }
